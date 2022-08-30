@@ -18,5 +18,4 @@ function inverter(str) {
         newString += str[i];
     }
     return newString;
-
 }
