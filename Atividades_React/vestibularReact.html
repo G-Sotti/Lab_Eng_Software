@@ -21,12 +21,9 @@
         html {
             font-family: Arial;
             font-weight: bold;
-            text-align: center;
-            font-size: px;
         }
 
         .page {
-            justify-content: center;
             text-align: center;
             margin-left: 20%;
             margin-right: 20%;
@@ -43,17 +40,29 @@
             margin-top: 120px;
             left: 0;
         }
-        .linha{
+
+        .linha {
             margin-left: 20%;
             margin-right: 20%;
             border-left: 1px solid black;
             border-right: 1px solid black;
         }
-        .dropdown-menu{
+
+        .dropdown-menu {
             font-family: Arial;
             font-weight: bold;
-            text-align: center;
+            text-align: justify;
             font-size: 10px;
+        }
+
+        .alinhamento {
+            width: 100%;
+            margin-left: auto;
+            padding: 0;
+        }
+
+        .menu {
+            width: 500px;
         }
     </style>
 </head>
@@ -71,28 +80,39 @@
     <script type="text/babel">
         const element = (
             <div>
-                <h1>Caro(a) candidato(a), aqui você encontrará respostas para as suas dúvidas referentes ao Processo Seletivo Vestibular do 2º Semestre de 2022.</h1>
-                <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu1" data-bs-toggle="dropdown" aria-expanded="false">
-                        Dropdown
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                        <li>É um processo seletivo que seleciona candidatos para as Faculdades de Tecnologia do Estado (Fatecs)</li>
+                <h1>Caro(a) candidato(a), aqui você encontrará respostas para as suas dúvidas referentes ao Processo Seletivo Vestibular do 1º Semestre de 2023.</h1>
+                <div class='alinhamento'>
+                    <ul class="list-unstyled ps-0">
+                        <button class="menu btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#account-collapse1" aria-expanded="false">
+                            O que é o Vestibular?
+                        </button>
+                        <div class="collapse" id="account-collapse1">
+                            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                <li>É um processo seletivo que seleciona candidatos para as Faculdades de Tecnologia do Estado (Fatecs)</li>
+                            </ul>
+                        </div>
+                        <button class="menu btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#account-collapse2" aria-expanded="false">
+                            Vai ter prova?
+                        </button>
+                        <div class="collapse" id="account-collapse2">
+                            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                <li>Sim. Neste primeiro semestre de 2023, as provas presenciais voltarão a fazer parte do calendário para o ingresso nas Fatecs.</li>
+                            </ul>
+                        </div>
+                        <button class="menu btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#account-collapse3" aria-expanded="false">
+                            Quem pode tentar uma vaga nos Cursos Superiores?
+                        </button>
+                        <div class="collapse" id="account-collapse3">
+                            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                <li>- O Processo Seletivo Vestibular, do 2º Semestre de 2022, destina-se ao ingresso nos Cursos Superiores de Tecnologia oferecidos pelas Fatecs - Faculdades de Tecnologia do CEETEPS, devendo o candidato ter concluído obrigatoriamente o Ensino Médio até a data da matrícula, atendendo a um dos seguintes pré-requisitos:</li>
+                                <li>- Para o candidato que concluiu o Ensino Médio regular: possuir Histórico Escolar com Certificado de conclusão do Ensino Médio;</li>
+                                <li>- Para o candidato que concluiu o Ensino Médio por meio de provas ou exames de certificação de competências ou de avaliação de jovens e adultos, que sejam decorrentes do Exame Nacional do Ensino Médio - ENEM, do Exame Nacional para Certificação de Competências de Jovens e Adultos - ENCCEJA e afins: possuir certificação de conclusão do Ensino Médio, expedida por órgão competente.</li>
+                                <li>- Para o candidato que estiver cursando ou concluindo em 2022 o Ensino Médio regular ou na modalidade de Educação de Jovens e Adultos - EJA, ou afins: possuir Histórico Escolar com Certificado de Conclusão do Ensino Médio no ato da matrícula.</li>
+                            </ul>
+                        </div>
                     </ul>
-                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
-                        Dropdown
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                        <li>É um processo seletivo que seleciona candidatos para as Faculdades de Tecnologia do Estado (Fatecs)</li>
-                    </ul>
-                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu3" data-bs-toggle="dropdown" aria-expanded="false">
-                        Dropdown
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu3">
-                        <li>É um processo seletivo que seleciona candidatos para as Faculdades de Tecnologia do Estado (Fatecs)</li>
-                    </ul>
-                </div>
-            </div>
+                </div >
+            </div >
         );
         /*function typeWrite(element){
             const texto = element.innerHTML.split('');
